@@ -1,6 +1,6 @@
 import boto3
 
-#Search s3 bucket names on AWS
+#Search s3 bucket names 
 
 resource=boto3.resource( "s3" )
 
