@@ -1,0 +1,26 @@
+import boto3
+
+#how to upload single file
+s3_resource=boto3.client("s3")
+s3_resource.upload_file(
+    Filename="Test_upload_file.txt",
+    Bucket="kparham-bucket-test-boto3",
+    Key="Test_upload_file.txt")
+    
+#how to upload multiple files
+import os
+import glob
+
+cwd=os.getcwd()
+
+cwd=cwd+"/upload/"
+
+files=glob.glob(cwd+".txt")
+files
+
+for file in files:
+    s3_resource=boto3.client("s3")
+    s3_resource.upload_file(
+    Filename=file,
+    Bucket="kparham-bucket-test-boto3",
+    Key=file.split("/")[-1])
