@@ -1,4 +1,4 @@
-# create a S3 Bucket
+# create a S3 Buckets
 
 import boto3
 
