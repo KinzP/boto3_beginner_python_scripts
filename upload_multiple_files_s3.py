@@ -1,4 +1,4 @@
-#how to upload multiple files
+#how to upload multiple files to S3 bucket
 import os
 import glob
 
