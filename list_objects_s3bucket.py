@@ -11,4 +11,3 @@ if len(objects)>0:
     
 for object in objects:
     print(object["Key"])
-    
