@@ -8,3 +8,6 @@ len(objects)
 
 if len(objects)>0:
     print("objects exits")
+    
+for object in objects:
+    print(object["Key"])
